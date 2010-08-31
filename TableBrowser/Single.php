@@ -421,4 +421,3 @@ class MDB2_TableBrowser_Single implements MDB2_TableBrowser_InterfaceSingleTable
         return $this->lastSQL;
     }
 }
-?>
