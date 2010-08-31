@@ -131,7 +131,7 @@ class MDB2_TableBrowser_Single implements MDB2_TableBrowser_InterfaceSingleTable
      * 
      * @return mixed the dispatch method's return
      */
-    private function __call($method, $args)
+    public function __call($method, $args)
     {
         //Ugly hack-around to get past call_user_method foolishness
         $params = array();

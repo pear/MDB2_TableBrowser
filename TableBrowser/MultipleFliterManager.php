@@ -87,7 +87,7 @@ class MDB2_TableBrowser_MultipleFilterManager implements MDB2_TableBrowser_Inter
      * 
      * @return mixed Depends on the method being called
      */
-    private function __call($method, $args)
+    public function __call($method, $args)
     {
         //Ugly hack-around to get past call_user_method foolishness
         $params = array();
