@@ -133,20 +133,10 @@ class MDB2_TableBrowser_Single implements MDB2_TableBrowser_InterfaceSingleTable
      */
     public function __call($method, $args)
     {
-        //Ugly hack-around to get past call_user_method foolishness
-        $params = array();
-        for ($count=0;$count<8;$count++) {
-            if (isset($args[$count])) {
-                $params[$count] = $args[$count];
-            } else {
-                $params[$count] = null;
-            }
-        }
         if (isset($this->_externalMethods[$method])) {
             $obj = $this->_externalMethods[$method];
             //return call_user_method($method, $obj, &$args);
-            return call_user_func(array(&$obj, $method), $obj, $params[0], $params[1],
-                  $params[2], $params[3], $params[4], $params[5], $params[6], $params[7]);
+            return call_user_func_array(array($obj, $method), array_merge(array($obj), $args));
         }
         //Unknown methods throw exception
         throw new MDB2_TableBrowser_ParameterException("Unknown Method $method", $args);
