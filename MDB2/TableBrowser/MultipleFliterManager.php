@@ -13,10 +13,10 @@
  * @link      http://code.google.com/p/mdb2tablebrowser/source/browse/trunk/MDB2_TableBrowser/TableBrowser/FilterManager.php
  */
 
-require_once 'Interfaces.php';
+require_once 'MDB2/TableBrowser/Interfaces.php';
 require_once 'MDB2.php';
-require_once 'DBException.php';
-require_once 'FilterManager.php';
+require_once 'MDB2/TableBrowser/DBException.php';
+require_once 'MDB2/TableBrowser/FilterManager.php';
 
 /**
  * This class implements the MDB2_TableBrowser_InterfaceMultipleWhereClauseGenerator interface
