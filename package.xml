@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
  <name>MDB2_TableBrowser</name>
  <channel>pear.php.net</channel>
  <summary>Database table abstraction library</summary>
@@ -19,10 +19,10 @@ library works with them as well.</description>
   <email>isaac@ticklespace.com</email>
   <active>yes</active>
  </lead>
- <date>2010-10-17</date>
- <time>17:11:29</time>
+ <date>2012-04-13</date>
+ <time>10:36:08</time>
  <version>
-  <release>0.1.2</release>
+  <release>0.1.3</release>
   <api>0.1.0</api>
  </version>
  <stability>
@@ -32,11 +32,7 @@ library works with them as well.</description>
  <license uri="http://www.php.net/license">PHP License</license>
  <notes>
 QA release
-SVN dir layout
-Bug #15897  	Sample code spews PHP notices
-Bug #16560 Error message while creating the table browser
-Bug #16616  	Superfluous whitespace in MDB2/TableBrowser/Single.php
-Bug #16713  	space after file end
+Bug #18064	include paths wrong
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -44,14 +40,15 @@ Bug #16713  	space after file end
    <file baseinstalldir="/" md5sum="d9aae08a5abf90cafab717e5a199ed65" name="MDB2/TableBrowser.php" role="php" />
    <file baseinstalldir="/" md5sum="1bca0b04c5102ca4cf82713b420024bd" name="MDB2/TableBrowser/ColumnManager.php" role="php" />
    <file baseinstalldir="/" md5sum="71dea8d732a999fec37283b5fb018894" name="MDB2/TableBrowser/DBException.php" role="php" />
-   <file baseinstalldir="/" md5sum="ad5c90edd2e5f1fbcf27df70ada7f417" name="MDB2/TableBrowser/FilterManager.php" role="php" />
+   <file baseinstalldir="/" md5sum="4e0f842243d53d03487ccf337d45a727" name="MDB2/TableBrowser/FilterManager.php" role="php" />
    <file baseinstalldir="/" md5sum="7d8f32861b003ad1b3c2407fdd8c240a" name="MDB2/TableBrowser/GroupByManager.php" role="php" />
    <file baseinstalldir="/" md5sum="0a6c171d2a433c678c542ff6949a2f7d" name="MDB2/TableBrowser/Interfaces.php" role="php" />
-   <file baseinstalldir="/" md5sum="ac231ebc46aea8058bf8315710812f45" name="MDB2/TableBrowser/MultipleFliterManager.php" role="php" />
+   <file baseinstalldir="/" md5sum="790e708186c8f601b487ca3f8dbb6283" name="MDB2/TableBrowser/MultipleFliterManager.php" role="php" />
    <file baseinstalldir="/" md5sum="6c017d86388a351aa17233ca49a1f3ac" name="MDB2/TableBrowser/OrderByManager.php" role="php" />
    <file baseinstalldir="/" md5sum="3a5d46714ecf3c09f03c262e29260c1a" name="MDB2/TableBrowser/ParameterException.php" role="php" />
-   <file baseinstalldir="/" md5sum="970febebdf6761c77d4caaf63df041be" name="MDB2/TableBrowser/Single.php" role="php" />
+   <file baseinstalldir="/" md5sum="5ba361f5e8012dead6284798ce4230ac" name="MDB2/TableBrowser/Single.php" role="php" />
    <file baseinstalldir="/" md5sum="9900db84074ead8a37c75558b243307c" name="MDB2/TableBrowser/TableValidator.php" role="php" />
+   <file baseinstalldir="/" md5sum="781bd5c1e3224e583ec5785e7ec5242e" name="README" role="data" />
   </dir>
  </contents>
  <dependencies>
@@ -174,6 +171,22 @@ Bug #15897  	Sample code spews PHP notices
 Bug #16560 Error message while creating the table browser
 Bug #16616  	Superfluous whitespace in MDB2/TableBrowser/Single.php
 Bug #16713  	space after file end
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.3</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-04-13</date>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>
+QA release
+Bug #18064	include paths wrong
    </notes>
   </release>
  </changelog>
